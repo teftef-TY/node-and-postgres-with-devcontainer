@@ -18,6 +18,8 @@ services:
     build: .
     user: node
     working_dir: '/home/node/workspace'
+    environment:
+      - WATCHPACK_POLLING=true
     tty: true
     volumes:
       - ../workspace:/home/node/workspace
